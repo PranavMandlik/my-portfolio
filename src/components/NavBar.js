@@ -25,6 +25,14 @@ export const NavBar = () => {
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
     }
+     // ✅ Move this outside of Connectwithme
+     const handleConnectClick = () => {
+        // Open Mailchimp form in new tab
+        window.open("http://eepurl.com/jcWuvs", "_blank");
+
+        // Open default email client
+        window.location.href = "mailto:mandlikpranav29@gmail.com?subject=Let's Connect!";
+    };
 
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
@@ -47,7 +55,7 @@ export const NavBar = () => {
                     <a href="#"><img src={navIcon2} alt=""/></a>
                     <a href="https://www.instagram.com/_pranav_mandlik?igsh=MWo4NTJ6dWRpeTV3Zw==" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Instagram" /></a>
                     </div>
-                    <button className="vvd" onClick={() => window.location.href = "https://mail.google.com"}><span>Let's Connect!</span></button>
+                    <button className="vvd" type="button" onClick={handleConnectClick}>Let's Connect</button>
                 </span>
                 </Navbar.Collapse>
             </Container>

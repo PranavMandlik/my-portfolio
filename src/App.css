@@ -486,6 +486,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Contact Section CSS ************/
+
+.form-container {
+  width: 90%;            /* Or whatever percentage you like */
+  max-width: 400px;      /* Limits it on large screens */
+  margin: 0 auto;        /* Centers it horizontally */
+}
+
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 40px 20px 100px 20px;

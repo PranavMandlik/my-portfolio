@@ -3,10 +3,7 @@ import React from "react";
 
 const ConnectWithMeButton = () => {
   const handleConnectClick = () => {
-    // Open Mailchimp form in new tab
-    window.open("http://eepurl.com/jcWuvs", "_blank");
-
-    // Open default email client
+        // Open default email client
     window.location.href = "mailto:mandlikpranav29@gmail.com?subject=Let's Connect!";
   };
 
