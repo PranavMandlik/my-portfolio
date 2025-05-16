@@ -1,6 +1,10 @@
 import { Container, Nav, Row, Col, Tab } from "react-bootstrap"
-import cosiqhome from "../assets/img/cosiqhome.png";
-import ongoing from "../assets/img/ongoing.png";
+import port1 from "../assets/img/port1.png";
+import port2 from "../assets/img/port2.png";
+import port3 from "../assets/img/port3.png";
+import port4 from "../assets/img/port4.png";
+import port5 from "../assets/img/port5.png";
+import paper1 from "../assets/img/paper1.png";
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -11,21 +15,44 @@ export const Projects = () => {
 
     const projects = [
         {
-            title: "CosIq Homepage",
-            description: "Front-End Design",
-            imgUrl: cosiqhome,
+            title: "Personal Portfolio",
+            description: "HomePage",
+            imgUrl: port1,
             tab: "first"
         },
         {
-            title: "Ongoing Research Paper",
-            description: "Details will be updated once Published.",
-            imgUrl: ongoing,
+            title: "Personal Portfolio",
+            description: "Skills Page",
+            imgUrl: port2,
+            tab: "first"
+        },
+        {
+            title: "Personal Portfolio",
+            description: "Skills Page",
+            imgUrl: port3,
+            tab: "first"
+        },
+        {
+            title: "Personal Portfolio",
+            description: "Project Page",
+            imgUrl: port4,
+            tab: "first"
+        },
+        {
+            title: "Personal Portfolio",
+            description: "Contact Page",
+            imgUrl: port5,
+            tab: "first"
+        },
+        {
+            title: "Brain Tumor Classification",
+            description: "5th International Conference on Advancement in Electronics & Communication Engineering AECE -2025 21st - 22nd November 2025, COMMUNICATED",
+            imgUrl: paper1,
             tab: "second"
         },
         {
             title: "Ongoing Research Paper",
             description: "Details will be updated once Published.",
-            imgUrl: ongoing,
             tab: "third"
         }
     ]
@@ -44,13 +71,13 @@ export const Projects = () => {
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
-                            <Nav.Link eventKey="first">Front-End Homepage</Nav.Link>
+                            <Nav.Link eventKey="first">Personal Portfolio</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="second">Paper 1</Nav.Link>
+                            <Nav.Link eventKey="second">Research Paper</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="third">Paper 2</Nav.Link>
+                            <Nav.Link eventKey="third">Paper 2 ongoing</Nav.Link>
                         </Nav.Item>
                         </Nav>
                         <Tab.Content>
